@@ -1,0 +1,38 @@
+.kartica {
+  border: 2px solid #e0e0e0;
+}
+.naslovv,
+.naslovv a {
+  color: #212529;
+  text-decoration: none;
+}
+.naslovv {
+  height: 40px;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.naslovv a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.kartica hr {
+  margin: 0 auto;
+  width: 80%;
+  outline: black;
+}
+
+.kartica button {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid rgb(205, 209, 215);
+  padding: 10px;
+  color: black;
+}
+
+.kartica button:hover {
+  border: 2px solid rgb(42, 42, 44);
+}

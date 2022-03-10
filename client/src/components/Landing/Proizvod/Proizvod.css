@@ -1,0 +1,7 @@
+.kosarica button:hover {
+  background-color: rgba(20, 20, 20, 0.267);
+}
+
+.opis {
+  white-space: pre-wrap;
+}

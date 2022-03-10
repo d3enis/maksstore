@@ -1,0 +1,13 @@
+.Navbar {
+  color: white;
+}
+.avatar {
+  align-self: center;
+  vertical-align: center;
+  color: white;
+  font-size: x-large;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
