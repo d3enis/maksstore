@@ -11,9 +11,7 @@ const KatProizvodi = () => {
   console.log(kategorija);
   const [content, setContent] = useState([]);
   useEffect(() => {
-    axios
-      .get(`http://localhost:3001/kategorije/${kategorija}`)
-      .then((res) => setContent(res.data));
+    axios.get(`/kategorije/${kategorija}`).then((res) => setContent(res.data));
   }, [kategorija]);
 
   return (
