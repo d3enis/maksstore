@@ -20,7 +20,7 @@ const Registracija = () => {
       setShow(0);
     } else {
       axios
-        .post("http://localhost:3001/korisnik/registracija", {
+        .post("/korisnik/registracija", {
           ime: ime,
           prezime: prezime,
           username: username,

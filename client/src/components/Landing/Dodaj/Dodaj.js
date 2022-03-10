@@ -23,7 +23,7 @@ const Dodaj = () => {
 
   const updateHandler = () => {
     axios
-      .post("http://localhost:3001/proizvod/dodaj", {
+      .post("/proizvod/dodaj", {
         naziv: naziv,
         kategorija: kategorija,
         cijena: cijena,

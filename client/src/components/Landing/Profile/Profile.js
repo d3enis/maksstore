@@ -10,7 +10,7 @@ const Profile = () => {
 
   useEffect(() => {
     axios
-      .post("http://localhost:3001/korisnik/getKorisnik", {
+      .post("/korisnik/getKorisnik", {
         username: localStorage.getItem("username"),
       })
       .then((res) => {

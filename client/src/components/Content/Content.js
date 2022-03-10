@@ -13,9 +13,7 @@ const Content = ({ query }) => {
     console.log(typeof query);
     if (query.charAtCode == 48) {
     }
-    axios
-      .get("http://localhost:3001/proizvod/query/" + query)
-      .then((res) => setContent(res.data));
+    axios.get("/proizvod/query/" + query).then((res) => setContent(res.data));
   }, [query]);
   console.log(content);
   return (

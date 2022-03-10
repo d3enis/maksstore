@@ -9,9 +9,7 @@ const Proizvod = () => {
   const [rezultat, setRezultat] = useState([""]);
   const [kolicina, setKolicina] = useState(1);
   useEffect(() => {
-    axios
-      .get(`http://localhost:3001/proizvod/${id}`)
-      .then((res) => setRezultat(res.data));
+    axios.get(`/proizvod/${id}`).then((res) => setRezultat(res.data));
   }, [id]);
 
   let idProizvoda = rezultat[0].idProizvoda;

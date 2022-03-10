@@ -15,7 +15,7 @@ const Prijava = () => {
       setShow(0);
     } else {
       axios
-        .post("http://localhost:3001/korisnik/prijava", {
+        .post("/korisnik/prijava", {
           username: username,
           password: password,
         })

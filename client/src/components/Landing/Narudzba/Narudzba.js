@@ -19,7 +19,7 @@ const Kosarica = () => {
       return;
     } else {
       axios
-        .post("http://localhost:3001/kosarica/all", {
+        .post("/kosarica/all", {
           idKorisnika: localStorage.getItem("idKorisnika"),
         })
         .then((res) => {
@@ -30,7 +30,7 @@ const Kosarica = () => {
 
   useEffect(() => {
     axios
-      .post("http://localhost:3001/kosarica/ukupno", {
+      .post("/kosarica/ukupno", {
         idKorisnika: localStorage.getItem("idKorisnika"),
       })
       .then((res) => {
@@ -42,7 +42,7 @@ const Kosarica = () => {
 
   useEffect(() => {
     axios
-      .post("http://localhost:3001/korisnik/getKorisnik", {
+      .post("/korisnik/getKorisnik", {
         username: localStorage.getItem("username"),
       })
       .then((res) => {
@@ -74,7 +74,7 @@ const Kosarica = () => {
   console.log(ukupno);
   const createOrder = () => {
     axios
-      .post("http://localhost:3001/narudzba/kreiraj", {
+      .post("/narudzba/kreiraj", {
         idKorisnika: localStorage.getItem("idKorisnika"),
         ukupnaCijena: ukupno,
         imePrimatelja: ime,

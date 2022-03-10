@@ -11,7 +11,7 @@ const Kosarica = () => {
       return;
     } else {
       axios
-        .post("http://localhost:3001/kosarica/all", {
+        .post("/kosarica/all", {
           idKorisnika: localStorage.getItem("idKorisnika"),
         })
         .then((res) => {
@@ -37,7 +37,7 @@ const Kosarica = () => {
 
   const removeFromCart = (id) => {
     axios
-      .post("http://localhost:3001/kosarica/izbrisi", {
+      .post("/kosarica/izbrisi", {
         idKorisnika: localStorage.getItem("idKorisnika"),
         idProizvoda: id,
       })
@@ -47,7 +47,7 @@ const Kosarica = () => {
 
   const changeKolicina = (id, value) => {
     axios
-      .put("http://localhost:3001/kosarica/kolicina", {
+      .put("/kosarica/kolicina", {
         idKorisnika: localStorage.getItem("idKorisnika"),
         idProizvoda: id,
         kolicina: value,
