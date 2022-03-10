@@ -52,7 +52,7 @@ const Navbars = ({ query, setQuery }) => {
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                   <Dropdown.Item href="/pocetna">Početna</Dropdown.Item>
-                  <Dropdown.Item href="/kategorije">Kategorije</Dropdown.Item>
+                  <Dropdown.Item href="/kategorija">Kategorije</Dropdown.Item>
                   <Dropdown.Item href="/dodaj">Dodaj</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
