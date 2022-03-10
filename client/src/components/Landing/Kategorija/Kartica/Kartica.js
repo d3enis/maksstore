@@ -4,7 +4,7 @@ const Kartica = ({ slika, naziv, link }) => {
   return (
     <>
       <div className=" naslovP kartica p-2">
-        <a href={"/kategorije/" + link}>
+        <a href={"/kategorija/" + link}>
           <div className="slika d-flex justify-content-center">
             <img
               className="img-fluid"
