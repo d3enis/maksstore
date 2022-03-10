@@ -64,7 +64,7 @@ const Navbars = ({ query, setQuery }) => {
               <a className="nav-link text-white" href="/pocetna">
                 Početna
               </a>
-              <a className="nav-link text-white" href="/kategorije">
+              <a className="nav-link text-white" href="/kategorija">
                 Kategorije
               </a>
 
