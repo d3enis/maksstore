@@ -12,7 +12,7 @@ const Kartica = ({ idProizvoda, kategorija, naslov, cijena, slika }) => {
       return;
     } else {
       axios
-        .post("http://localhost:3001/kosarica/dodaj", {
+        .post("/kosarica/dodaj", {
           idKorisnika: localStorage.getItem("idKorisnika"),
           idProizvoda: idProizvoda,
           kolicina: 1,

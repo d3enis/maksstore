@@ -29,7 +29,7 @@ const Proizvod = () => {
       return;
     }
     axios
-      .post("http://localhost:3001/kosarica/dodaj", {
+      .post("/kosarica/dodaj", {
         idKorisnika: localStorage.getItem("idKorisnika"),
         idProizvoda: id,
         kolicina: kolicina,

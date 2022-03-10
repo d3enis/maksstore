@@ -26,7 +26,7 @@ const Profile = () => {
       return;
     } else {
       axios
-        .post("http://localhost:3001/narudzba/ispis", {
+        .post("/narudzba/ispis", {
           idKorisnika: localStorage.getItem("idKorisnika"),
         })
         .then((res) => {
