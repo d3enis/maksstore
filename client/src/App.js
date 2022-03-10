@@ -32,10 +32,10 @@ function App() {
               <Route exact path="/profil" element={<Profile />} />
               <Route exact path="/kosarica" element={<Kosarica />} />
               <Route exact path="/narudzba" element={<Narudzba />} />
-              <Route exact path="/kategorije" element={<Kategorija />} />
+              <Route exact path="/kategorija" element={<Kategorija />} />
               <Route
                 exact
-                path="/kategorije/:kategorija"
+                path="/kategorija/:kategorija"
                 element={<KatProizvodi />}
               />
               <Route component={Home} />
