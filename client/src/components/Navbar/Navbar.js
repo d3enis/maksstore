@@ -5,7 +5,7 @@ const Navbars = ({ query, setQuery }) => {
   const CheckLogin = () => {
     if (localStorage.getItem("username") == null) {
       return (
-        <div className="prijavareg  d-flex ">
+        <div className="prijavareg d-flex p-0  ">
           <a className="nav-link text-white" href="/prijava">
             Prijava
           </a>
@@ -23,7 +23,7 @@ const Navbars = ({ query, setQuery }) => {
 
           <a className="nav-link text-white" href="/profil">
             {localStorage.getItem("username")}
-            <i className="fa fa-user-circle-o avatar ps-2"></i>
+            <i className="d-none fa fa-user-circle-o avatar ps-2"></i>
           </a>
           <a
             className="nav-link text-white avatar pt-1 px-1"
@@ -40,7 +40,7 @@ const Navbars = ({ query, setQuery }) => {
   return (
     <>
       <nav className="navbar navbar-dark bg-dark">
-        <div className="container justify-content-lg-between p-2">
+        <div className="container justify-content-lg-between p-2 ">
           <div className="naslov d-flex align-items-end">
             <a className="navbar-brand  " href="/">
               MaksStore

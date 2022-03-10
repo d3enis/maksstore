@@ -31,13 +31,13 @@ const Kartica = ({ idProizvoda, kategorija, naslov, cijena, slika }) => {
       <div className="kartica p-2">
         <small>{kategorija}</small>
         <div className="naslovv">
-          <a href={"/proizvod/" + idProizvoda}>
+          <a href={"/proizvodi/" + idProizvoda}>
             <h6>{naslov}</h6>
           </a>
         </div>
 
         <div className="slika d-flex justify-content-center">
-          <a href={"/proizvod/" + idProizvoda}>
+          <a href={"/proizvodi/" + idProizvoda}>
             <img
               className="img-fluid"
               style={{ width: "300px", height: "300px" }}

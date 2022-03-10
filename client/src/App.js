@@ -25,7 +25,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route exact path="/pocetna" element={<Home />} />
-              <Route exact path="/proizvod/:id" element={<Proizvod />} />
+              <Route exact path="/proizvodi/:id" element={<Proizvod />} />
               <Route exact path="/dodaj" element={<Dodaj />} />
               <Route exact path="/registracija" element={<Registracija />} />
               <Route exact path="/prijava" element={<Prijava />} />
