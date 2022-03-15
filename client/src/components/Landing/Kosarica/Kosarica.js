@@ -120,7 +120,7 @@ const Kosarica = () => {
     } else {
       return (
         <>
-          <h1>Trenutno nemate ništa u košarici</h1>
+          <h3>Trenutno nemate ništa u košarici</h3>
         </>
       );
     }
