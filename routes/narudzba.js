@@ -21,7 +21,8 @@ router.post("/kreiraj", (req, res) => {
     (err, result) => {
       if (err) console.log(err);
       //Dohvati id narudzbe
-      db.query(`SELECT LAST_INSERT_ID() FROM narudzba`, (err, result) => {
+      db.query(`select max(idNarudzbe) from narudzba;`, (err, result) => {
+        console.log(result);
         if (err) console.log(err);
         idNarudzbe = result[0]["LAST_INSERT_ID()"];
         //DODAVANJE PROIZVODA U TABLICU NARUDZBA_PROIZVOD
