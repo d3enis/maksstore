@@ -71,7 +71,7 @@ const Profile = () => {
     } else {
       return (
         <>
-          <h1>Trenutno nemate ništa u košarici</h1>
+          <h3>Niste ništa naručili</h3>
         </>
       );
     }
@@ -163,7 +163,7 @@ const Profile = () => {
 
       <div className="narudzbe card-body container">
         <div className="row gutters">
-          <h5 className="mb-2 text-primary text-center">Moje narudžbe</h5>
+          <h5 className="mb-2 text-primary text-center">Naručeni proizvodi</h5>
           <Proizvod />
         </div>
       </div>
