@@ -5,7 +5,7 @@ const Navbars = ({ query, setQuery }) => {
   const CheckLogin = () => {
     if (localStorage.getItem("username") == null) {
       return (
-        <div className="prijavareg d-flex p-0  ">
+        <div className="prijavareg d-flex   ">
           <a className="nav-link text-white" href="/prijava">
             Prijava
           </a>
@@ -42,15 +42,16 @@ const Navbars = ({ query, setQuery }) => {
       <nav className="navbar navbar-dark bg-dark">
         <div className="container justify-content-lg-between p-2 ">
           <div className="naslov d-flex align-items-end">
-            <a className="navbar-brand  " href="/">
+            <a className="navbar-brand d-none d-md-block " href="/">
               MaksStore
             </a>
-            <div className="d-lg-none drop ">
+            <div className="d-lg-none drop  ">
               <Dropdown>
                 <Dropdown.Toggle variant="dark">
                   <i className="fas fa-bars" />
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
+                  <Dropdown.Item href="/pocetna">MaksStore</Dropdown.Item>
                   <Dropdown.Item href="/pocetna">Početna</Dropdown.Item>
                   <Dropdown.Item href="/kategorija">Kategorije</Dropdown.Item>
                   <Dropdown.Item href="/dodaj">Dodaj</Dropdown.Item>
