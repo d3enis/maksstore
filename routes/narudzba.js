@@ -66,7 +66,7 @@ LEFT JOIN proizvod on proizvod.idProizvoda = narudzba_proizvod.idProizvoda
 where idKorisnika = ${idKorisnika}`,
     (err, result) => {
       if (err) console.log(err);
-      console.log(result);
+
       res.send(result);
     }
   );
