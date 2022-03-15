@@ -21,10 +21,10 @@ router.post("/kreiraj", (req, res) => {
     (err, result) => {
       if (err) console.log(err);
       //Dohvati id narudzbe
-      db.query(`select max(idNarudzbe) from narudzba;`, (err, result) => {
+      db.query(`select max(idNarudzbe) as id from narudzba;`, (err, result) => {
         console.log(result);
         if (err) console.log(err);
-        idNarudzbe = result[0]["LAST_INSERT_ID()"];
+        idNarudzbe = result[0]["id"];
         //DODAVANJE PROIZVODA U TABLICU NARUDZBA_PROIZVOD
         proizvodi.forEach((proizvod) => {
           db.query(
