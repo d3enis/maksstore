@@ -2,8 +2,7 @@
 const mysql = require("mysql");
 
 //Spajanje na bazu
-const db = mysql.createPool({
-  connectionLimit: 15,
+const db = mysql.createConnection({
   host: "eu-cdbr-west-02.cleardb.net",
   user: "b60652ce281183",
   password: "2d792b40",

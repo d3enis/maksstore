@@ -40,15 +40,17 @@ router.post("/registracija", (req, res) => {
 
       db.query(sqlGetIdKorisnika, (err, res) => {
         idKorisnika = res[0].idKorisnika;
-      
+        setTimeout(() => {
+          db.query(
+            sqlKosarica,
+            [idKorisnika, ime, prezime, broj, email],
+            (err, res) => {
+              if (err) console.log(err);
+            }
+          );
+        }, 1500);
       });
-      db.query(
-        sqlKosarica,
-        [idKorisnika, ime, prezime, broj, email],
-        (err, res) => {
-          if (err) console.log(err);
-        }
-      );
+
       res.send(["Uspješno ste registrirani", 1]);
       res.end();
     }

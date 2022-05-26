@@ -117,7 +117,7 @@ const Kosarica = () => {
     } else {
       return (
         <>
-          <h1>Trenutno nemate ništa u košarici</h1>
+          <h2>Trenutno nemate narudžbi.</h2>
         </>
       );
     }
