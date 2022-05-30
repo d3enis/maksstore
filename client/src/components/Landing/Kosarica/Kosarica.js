@@ -22,7 +22,7 @@ const Kosarica = () => {
 
   useEffect(() => {
     axios
-      .post("http://localhost:3001/kosarica/ukupno", {
+      .post("/kosarica/ukupno", {
         idKorisnika: localStorage.getItem("idKorisnika"),
       })
       .then((res) => {
