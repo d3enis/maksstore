@@ -3,13 +3,12 @@ import Footer from "../../Footer/Footer";
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { UserContext } from "../../../controllers/UserContext";
+
 const Prijava = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [show, setShow] = useState(2);
-  const { user, setUser } = useContext(UserContext);
-  const navigate = useNavigate();
+ 
   const loginUser = (e) => {
     if (username == "" || password == "") {
       setShow(0);
