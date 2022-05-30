@@ -6,8 +6,7 @@ import Registracija from "./components/Landing/Registracija/Registracija";
 import Narudzba from "./components/Landing/Narudzba/Narudzba";
 import Prijava from "./components/Landing/Prijava/Prijava";
 import KatProizvodi from "./components/Landing/Kategorija/KatProizvodi";
-import { useState } from "react";
-import { UserContext } from "./controllers/UserContext";
+
 import "./App.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -15,11 +14,11 @@ import Profile from "./components/Landing/Profile/Profile";
 import Kategorija from "./components/Landing/Kategorija/Kategorija";
 
 function App() {
-  const [user, setUser] = useState("");
+
 
   return (
     <>
-      <UserContext.Provider value={{ user, setUser }}>
+      
         <Router>
           <div className="App">
             <Routes>
@@ -42,7 +41,7 @@ function App() {
             </Routes>
           </div>
         </Router>
-      </UserContext.Provider>
+      
     </>
   );
 }
