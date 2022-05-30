@@ -73,7 +73,7 @@ const Kosarica = () => {
               <div className="col-md-3 col-lg-3 col-xl-3">
                 <a
                   className="text-black text-decoration-none"
-                  href={"/proizvod/" + proizvod.idProizvoda}
+                  href={"/proizvodi/" + proizvod.idProizvoda}
                 >
                   <p className="lead fw-normal mb-2">
                     {proizvod.nazivProizvoda}
