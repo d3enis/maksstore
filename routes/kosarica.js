@@ -95,7 +95,7 @@ router.put("/kolicina", (req, res) => {
     (err, result) => {
       if (err) console.log(err);
       idKosarica = result[0].idKosarica;
-      const sqlIzmjeni = `UPDATE webshop.kosarica_proizvod SET kolicina = "${kolicina}" where idKosarice = "${idKosarica}" AND idProizvoda = "${idProizvoda}"`;
+      const sqlIzmjeni = `UPDATE kosarica_proizvod SET kolicina = "${kolicina}" where idKosarice = "${idKosarica}" AND idProizvoda = "${idProizvoda}"`;
 
       db.query(sqlIzmjeni, (err, results, fields) => {
         if (err) console.log(err);
