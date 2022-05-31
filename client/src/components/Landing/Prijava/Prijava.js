@@ -1,7 +1,6 @@
 import Navbar from "../../Navbar/Navbar";
 import Footer from "../../Footer/Footer";
-import { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
+
 import axios from "axios";
 
 const Prijava = () => {
