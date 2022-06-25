@@ -4,7 +4,7 @@ It is meant to be a web shop with features of :
 - Previewing products 
 - Adding new products
 - Searching through products by name or category
-- Cart system(add,remove,checkout,etc.)
+- Cart system (add,remove,checkout,etc.)
 - Login system
 ## Technologies used
 - React.Js
