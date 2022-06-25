@@ -15,10 +15,15 @@ It is meant to be a web shop with features of :
 - OracleMySQL 
 - Bootstrap 5
 - Heroku hosting
-
-[ER Diagram](erdiagram.png)
-
-## Preview of project
+## Preview of the project
 https://maksstoreclient.herokuapp.com/
 
 Sometimes it takes longer to load if the website hasn't been opened for some time.
+
+ [ER Diagram](./img/erdiagram.jpg)
+ 
+![Design preview](./img/design.jpg)
+
+
+
+
