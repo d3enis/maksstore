@@ -13,7 +13,7 @@ It is meant to be a web shop with features of :
 - Bootstrap 5
 - Heroku hosting
 
-[ER Diagram](d3enis.github.com/maksstore/erdiagram.png)
+[ER Diagram](erdiagram.png)
 
 ## Preview of project
 https://maksstoreclient.herokuapp.com/
