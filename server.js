@@ -24,7 +24,7 @@ app.use("/kosarica", kosarica);
 app.use("/narudzba", narudzba);
 app.use("/kategorije", kategorije);
 /* app.get("/", (req, res) => {
-  res.send("Desi brale");
+  res.send("Desi");
 }); */
 
 app.use(express.static("client/build"));
