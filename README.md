@@ -7,8 +7,11 @@ It is meant to be a web shop with features of :
 - Cart system (add,remove,checkout,etc.)
 - Login system
 ## Technologies used
+- HTML
+- CSS
 - React.Js
 - Node.Js
+- Express
 - OracleMySQL 
 - Bootstrap 5
 - Heroku hosting
