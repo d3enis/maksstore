@@ -5,12 +5,10 @@ import { useState, useEffect } from "react";
 
 const Content = ({ query }) => {
   const [content, setContent] = useState([]);
-  console.log(query.length);
   if (query.trim().length === 0) {
     query = "default";
   }
   useEffect(() => {
-    console.log(typeof query);
     if (query.charAtCode == 48) {
     }
     axios.get("/proizvod/query/" + query).then((res) => setContent(res.data));
