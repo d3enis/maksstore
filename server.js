@@ -34,5 +34,5 @@ app.get("*", (req, res) => {
 
 app.listen(process.env.PORT || 3001, (err) => {
   if (err) console.log(err);
-  console.log("Server radi na portu:" + port);
+  console.log("Server radi na portu:" + process.env.PORT || 3001);
 });
