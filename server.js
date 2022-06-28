@@ -9,7 +9,10 @@ const kosarica = require("./routes/kosarica");
 const korisnikRoute = require("./routes/korisnik");
 const narudzba = require("./routes/narudzba");
 const kategorije = require("./routes/kategorije");
-
+const http = require(http);
+setInterval(function () {
+  http.get("http:maksstoreclient.herokuapp.com");
+}, 300000);
 //Middleware
 
 app.use(cors());
