@@ -3,12 +3,11 @@ const mysql = require("mysql");
 require("dotenv").config();
 
 //Spajanje na bazu
-const db = mysql.createPool({
+const db = mysql.createConnection({
   host: process.env.DBHOST,
   user: process.env.DBUSER,
   password: process.env.DBPASSWORD,
   database: process.env.DBDATABASE,
-  connectionLimit: 20,
 });
 
 /* db.connect(function (err) {
