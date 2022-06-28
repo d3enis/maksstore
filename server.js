@@ -32,9 +32,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "client/build/index.html"));
 });
 
-const port = process.env.PORT || 3001;
-
-app.listen(port, (err) => {
+app.listen(process.env.PORT || 3001, (err) => {
   if (err) console.log(err);
   console.log("Server radi na portu:" + port);
 });
