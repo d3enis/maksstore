@@ -9,7 +9,6 @@ const kosarica = require("./routes/kosarica");
 const korisnikRoute = require("./routes/korisnik");
 const narudzba = require("./routes/narudzba");
 const kategorije = require("./routes/kategorije");
-const http = require(http);
 
 //Middleware
 
@@ -36,8 +35,4 @@ app.get("*", (req, res) => {
 app.listen(process.env.PORT || 3001, (err) => {
   if (err) console.log(err);
   console.log("Server radi na portu:" + process.env.PORT || 3001);
-
-  setInterval(function () {
-    http.get("http:maksstoreclient.herokuapp.com");
-  }, 300000);
 });
